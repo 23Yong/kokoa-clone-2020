@@ -1,6 +1,18 @@
+@keyframes onMouse {
+  from {
+    transform: none;
+  }
+  to {
+    background-color: #f8f8f8;
+  }
+}
 .user-component {
   justify-content: space-between;
   margin-bottom: 15px;
+  padding: 5px;
+}
+.user-component:hover {
+  animation: onMouse 0.1s linear forwards;
 }
 .user-component,
 .user-component__column:first-child {

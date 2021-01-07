@@ -4,7 +4,7 @@
     <link rel="stylesheet" href="css/style.css" />
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Welcome to Kokoa Clone</title>
+    <title>Chats - KokoaClone</title>
   </head>
   <body>
     <div class="status-bar">
@@ -30,8 +30,10 @@
         <span><i class="far fa-comment-dots fa-lg"></i></span>
         <span><i class="fas fa-music fa-lg"></i></span>
         <span>
-          <span class="badge--header"></span>
-          <i class="fas fa-cog fa-lg"></i>
+          <a href="settings.html">
+            <span class="badge--header"></span>
+            <i class="fas fa-cog fa-lg"></i>
+          </a>
         </span>
       </div>
     </header>
@@ -41,12 +43,12 @@
         <div class="user-component">
           <div class="user-component__column">
             <img
-              src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTjHERFIJxCNOdiMtAEgjrNKhu-0mz7fkqzRw&usqp=CAU"
+              src="https://cdn.pixabay.com/photo/2015/11/16/14/43/cat-1045782__340.jpg"
               class="user-component__avatar user-component__avatar--xl"
             />
             <div class="user-component__text">
-              <h4 class="user-component__title">IU</h4>
-              <h6 class="user-component__subtitle">this text whatever</h6>
+              <h4 class="user-component__title">Cat King</h4>
+              <h6 class="user-component__subtitle">Cute</h6>
             </div>
           </div>
           <div class="user-component__column">
@@ -58,11 +60,11 @@
       <div class="user-component">
         <div class="user-component__column">
           <img
-            src="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wCEAAkGBw0NDQ0NDQ0NDQ0NDQ0NDQ0NDQ8NDQ0NFREWFhURFRUYHSggGBomGxUVITIhJSkrLjE6FyA0ODMtNygtLisBCgoKDQ0OFQ0PFSsdFRkrKysrKzctLSsrKy0tLy0uKysuKysrLSstKy4rLS0vLysrNy0rLSstLS0tKy0rLSstLf/AABEIAOEA4QMBEQACEQEDEQH/xAAcAAEBAAIDAQEAAAAAAAAAAAAAAQIDBQYHBAj/xABFEAACAQMCAAcLCAgHAQAAAAAAAQIDBBEFEgYHExUhMVQUIkFRYXGRk5TR0iMyNVJ0gbGzJEJTYnKhssMmRHOEwuHxFv/EABkBAQEAAwEAAAAAAAAAAAAAAAABAgMEBf/EACoRAQACAQEHBAICAwAAAAAAAAABAhEDBBITITFBUTNScZEy0TSBIkJh/9oADAMBAAIRAxEAPwDxExYqAAAAAEAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAEAoEAAAAABkCZAuQJkoZAZAZAZAZAZAZAZAZAZAZAZAZAZAZAyIAACAAAAAAAATBRcAMATADAABgBgABcAMAMAAGCBgoYAYAmAGAuWREQAAAAUCAAKBAAAAAAAAAAAAAAAAAAAAAAAFAAAIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAoEAAAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAgACgQCgAAAAAAAAAAAAAAAAAAAAAAAAAAAgAAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAACgAAAAAAAAAAAAAAAAAAAAAAAAAAAAQAAAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAACMoEAABQAAAAAAAAAAAAAAAAAAAAAAAAAAAAIwAADZQoTqPbThOpLGdsIucsePCKsVmekOYoq4jaVLV6TCcpy3d1TtbjuqHTnEZJ4S+4Mty/tlx/Nd12W48PTyFXL/kQ4d/EnNd12W49RU9wOHfxJzXddlufUVPcDh38Sc13XZbn1FT3A4d/EnNd12W49RU9wOHfxJzXddluPUVPcU4d/EnNd12W49RU9wOHfxJzXddluPUVPcDh38S03FtVpYVWnUpt9KVSEoZ82Qxmsx1hpIgUCAAAAAAFAAAAAAAAxZQQFIO/cS30pX+wVfzqI7O3Yfzn4/T2iU0k22kl1tvCRHqNXddL9rT9ZH3hMw2SqJLc5JR8baS9IUhUUlmMlJeOLTX8gQyyBhy0d23fHd9Xct3oCZhnkK+epqFCEtk69GM/qSqwUvQ2GM2rHLLdOrGKzKUYp9TlJJMLmHk3HYnUrafyac80q7WzvsrdHxGUPP23nNcPNe5qudvJ1N2M7dks48eCuLEk7WrFZlTqRS624SSQMSwp0pTeIRlJ9eIpyePuCYZRt6jbiqc3KPzkottedBcSxjTk5bVGTl0rak3LK8gTC8hU3bNk931dr3egLiR0ZqSg4SUn1RcXuf3AxJUozhjfCUc9W6Ljn0gxKQJLGWREAAAAAAjKCIAHfuJf6Ur/YKv51EdnbsP5z8fp6Vw++iNQ+zy/FEh3bR6dniGlafp1SyuKtzeToXdNy5CgoblVxFNZ6PC8rrM3l0rSazNpxLn7C6uKnBe/VWU5Uqd1bxoSm28LfFyin4k8ekndurNp0LZ6Zd74ovoen/r1/6iS6tk9N3GrUjCMpyeIwi5Sb8EUstkdMzjm/Olzr9aWqS1Rbsq7VWLx0bE+iGf4VgzeNOpM6nE/69X4xuFMrXTaNS0lid9hU6q64UnHc5Ly4aX3mMPQ2jW3aRNe7pei8Wd1fWsLyd1CnOuuUhCcZVJSi+qUpZ6G+vwly5abJa9d7PVzPGNpPcGhWltytStsuoZqVJNttwnlLxR8SJHVt2mm5pRXOeacBOE9tR06pcXFOK5uowtqMuh1asqkpTcI+LLUfQU0NWsUm0x+LRxbaxW1DW7q5rtbp2s1GK+bTgpxxBeRElNmvN9WbT4d2p6zdVNTqWE9Nl3Ik/wBMeXTktifSmsNZeOsOnftN9zd5eXD6HpNCz4SXVO3io06lhGs6a+bTnKok0l4F0Z+8dmulIrrzEeGzgqlz/r3R2X+kSul62p/TbecGOS1201GjD5OtysbmKXRCrycsTx4n+PnGVnRxqxeO7jLtL/7C36P8p/amOzXb+THw7JfaXaW15X1m6lH5O3hCG5d7SjFPLS8MnnC/7Dfala2nVs8U4Y8JKuqXUq0lspQzGhS8EKfl/efhLDy9bVnUtns4SAlplkRAAAAAAMWUEBSDv3Et9J1/sFX86iOzt2H85+P09K4ffRGofZ5fiiQ7to9OzxLR9U0+jZ3FG5sO6Lmo58jX37eSzBJeh5Zk8ul6RWYmuZcnpVvcQ4O6nOopRt6laz5FSTSlNVFulHyfNWfIO7ZSLcG0z05Pq4IcYnNlnG07k5bbOpPfyuz5zzjGGMMtHaeHXdw57hBw87r0OvVjS7nqV6/cUY797cdqlOWcL9V4+8mG3U2je0pnpnk6TT4O6s9OdWNu3Yv9M3ZpZajFrf17sYz0FcsaWpuZx/j1c5Z2tXWNAjSpZndaVWltp/rVLeSykvKv+I7tsROro4jrVNH4zLqys42craE6tCPJUqk5Sg4JdCU4Y6WvOhgptdqV3cc4fXww1m6v9At611buhUV5CKljbGuuTn38YvpSEMtbUtfRibRjm+7gJwYtq2nVLe4qQlzjRhcUo9Cq0pU5Sg5x8zcfSJZ6GlWaTE/7NHFto1bT9bubauu+hazcZL5tSDnHE15GJY7NSaas1nw+nhfxk3lle3VnRo27VGSjCrPfKXTFPLWceEmGWttVqWmsR0fBxTX9a61a7uLibqValtJylL+OPR5EWWOyWm2pNp6u08FWuf8AXv8Aa/0klv0vW1P6Z8C+FHL3d/p1eXytC5uJUJSfz6PKPvfPH8PMJg0dbNrUnrEuOu3/AIwt/sn9qY7MLfyY+HY77VbS5vK+jXUY/KW8Jw3PvasZJ5SfgksZ/wDA3WvW1p0rPFOGPBqrpd1KjLv6U8yoVfBOHif7y6mWHma2lOnbHZwkBLTLIiAAAAAAYsoICkHfuJb6Ur/YKv51EdnbsP5z8fp7RKKaw0mn1prKZHqNfctL9lT9XH3BN2PDN04tbXGLj9VpOPoBiGHctL9lT9XH3A3Y8Hc1PGOTp468bI4yDEeGzYsbcLbjGMdGPFgLhjTowh82EY569sVHPoCREQ01dOt5z5SdvRlP68qUJS9LQSaVnnhvnTjJYlGMkupOKaQZYh5Nx2N062n7O8xSrpbO9wt0fEZQ87beU1w807pqZ3cpPdjGd8s48WSuLM+WE5OTbk22+tt5bCLTqSi8xlKL6sxbTwCJwquKibkpzTfW1JpvzsLmWKqSUtylJS6XuTalnzhMsuXnu3b57urdue70hcyjrTctznJyXVJye5feDMrUrTnjdOUsdW6TePSDMykCSxlkRAAAAAAMWUCCgbrW7rUJb6NWrRm04uVKpKnJx6OjKfV0L0Ba2mvOJw+zn7UO3XvtVb4gz4up7p+zn7UO3XvtVb4gcXU90/ac/ah2689qrfEDi6nun7Xn7UO3XntVb4gcXU90/Zz9qHbrz2qt8QOLqe6fs5+1Dt157VW+IHF1PdP2c/ah2689qrfEDjanun7OftQ7dee1VviBxdT3T9nP2oduvfaq3xA4up7p+3y3l7XruLr1q1dxyoutUnVcU+vG5vAY2va3WcrWs9lGjW5ShJV+UxThUjKtS2Sx8pDrjnrXjKj5sIiGEUMAMAMEDADAFAAAAAAAAxZQQFIAFAAAAACAUAAAAAAAAAAAAAAAAAAAAADFlBAUgAUABAKAAAAAAAAAAAAAAAAAAAAAAAAAIyiEFAAUAAAAAAAAAAAAAAAAAAAAAAAAAAAADFlBAUgAUAAAAAAAAAAAAAAAAAAAAAAAAAAAADFlBAUgAUAAAAAAAAAAAAAAAAAAAAAAAAAAAADFlFQAgAUAAAAAAAAAAAAAAAAAAAAAAAAAAAACMAgAACgAAAAAAAAAAAAAAAAAAAAAAAAAAAAYsoIgoACgAAAAAAAAAAAAAAAAAAAAAAAAAAAAYsoEFAAUAAAAAAACAUAAAAAIBQAAAAAAAAAAAAxZRUQAAFAAAAAAAAAAAAAAAAAAAAAAAAAAAAAjKCIAACgAAAAAAAAAAAAAAAAAAAAAAAAAAAARlBACABQAAAAAAAAAABAKAAAAKBAAAAAAAAKB/9k="
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnLDBrcDdaVkIkbSl-BUCmrKiLjxWVHrPChQ&usqp=CAU"
             class="user-component__avatar user-component__avatar--xl"
           />
           <div class="user-component__text">
-            <h4 class="user-component__title">BLACKPINK</h4>
+            <h4 class="user-component__title">Dog</h4>
             <h6 class="user-component__subtitle">this text whatever</h6>
           </div>
         </div>
