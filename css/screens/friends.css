@@ -21,14 +21,18 @@
   border-top: var(--main-border);
   padding-top: 15px;
 }
-
+.friends-screen__friends-header,
 .friends-screen__channel-header {
   margin-bottom: 30px;
   display: flex;
   justify-content: space-between;
   color: rgba(0, 0, 0, 0.5);
 }
-
+.friends-screen__friends-header {
+  margin-top: 5px;
+  padding-top: 15px;
+  border-top: var(--main-border);
+}
 @keyframes hideSplashScreen {
   from {
     opacity: 1;
