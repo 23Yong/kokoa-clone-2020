@@ -37,7 +37,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  animation: fadeIn 0.8s linear;
 }
 
 .chat__timestamp {
@@ -47,12 +46,23 @@
   font-size: 14px;
   border-radius: 25px;
   margin-bottom: 25px;
+  animation: fadeIn 0.8s linear;
+}
+
+@keyframes slideSide {
+  from {
+    transform: translateX(-30px);
+  }
+  to {
+    transform: none;
+  }
 }
 
 .message-row {
   width: 100%;
   display: flex;
   margin-bottom: 25px;
+  animation: slideSide 0.8s linear;
 }
 .message-row img {
   width: 50px;
@@ -86,8 +96,18 @@
   font-size: 14px;
 }
 
+@keyframes slideSideown {
+  from {
+    transform: translateX(30px);
+  }
+  to {
+    transform: none;
+  }
+}
+
 .message-row--own {
   justify-content: flex-end;
+  animation: slideSideown 0.8s linear;
 }
 
 .message-row--own .message__bubble {
