@@ -4,13 +4,16 @@
   height: 30px;
   border-radius: 15px;
   display: flex;
+}
+
+.badge--comment {
   justify-content: center;
   align-items: center;
   color: white;
   font-weight: 600;
 }
 
-.badge--nav {
+.badge--notification {
   position: fixed;
   background-color: tomato;
   width: 5px;
@@ -32,4 +35,16 @@
   font-weight: 600;
   right: 17px;
   top: 45px;
+}
+
+.badge--caution {
+  position: relative;
+  width: 15px;
+  height: 15px;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-weight: 600;
+  left: 115px;
+  bottom: 16px;
 }
