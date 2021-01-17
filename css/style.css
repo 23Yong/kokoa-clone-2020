@@ -24,7 +24,18 @@ body {
   font-family: "Open Sans", sans-serif;
   color: #2e363e;
 }
+@keyframes up {
+  from {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  to {
+    transform: none;
+    opacity: 1;
+  }
+}
 
 .main-screen {
   padding: 0px var(--horizontal-space);
+  animation: up 1s ease-in-out forwards;
 }

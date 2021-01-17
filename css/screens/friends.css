@@ -33,6 +33,7 @@
   padding-top: 15px;
   border-top: var(--main-border);
 }
+
 @keyframes hideSplashScreen {
   from {
     opacity: 1;
@@ -50,9 +51,43 @@
   width: 100vw;
   top: 0;
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   font-size: 132px;
   animation: hideSplashScreen 0.3s ease-in-out forwards;
   animation-delay: 2s;
+}
+
+.loading {
+  display: flex;
+  position: relative;
+  top: 35px;
+}
+.loading div {
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  margin: 10px;
+}
+
+@keyframes pop {
+  from {
+    transform: none;
+  }
+  to {
+    transform: translateY(-20px);
+  }
+}
+.loading div:first-child {
+  animation: pop 1s ease-in-out forwards;
+}
+.loading div:nth-child(2) {
+  animation: pop 1s ease-in-out forwards;
+  animation-delay: 0.5s;
+}
+.loading div:last-child {
+  animation: pop 1s ease-in-out forwards;
+  animation-delay: 1s;
 }
