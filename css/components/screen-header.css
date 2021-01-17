@@ -10,6 +10,8 @@
 .screen-header__title {
   font-size: 32px;
   font-weight: 600;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  color: #76c6ff;
 }
 
 .screen-header__icons span {
@@ -27,4 +29,26 @@
 
 .screen-header__icons .fa-cog:hover {
   animation: rotateCog 1s linear infinite;
+}
+
+@keyframes tremble {
+  0% {
+    transform: none;
+  }
+  25% {
+    transform: rotate(10deg);
+  }
+  50% {
+    transform: rotate(-10deg);
+  }
+  75% {
+    transform: rotate(10deg);
+  }
+  100% {
+    transform: none;
+  }
+}
+
+.screen-header__icons .fa-music:hover {
+  animation: tremble 1s linear infinite;
 }
